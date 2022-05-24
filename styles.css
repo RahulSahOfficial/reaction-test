@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+h1{
+    color: #393939;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+button{
+    background: #039be5;
+    color: white;
+    padding: 0.5rem;
+    width: 8rem;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+ul{
+    list-style: auto;
+    list-style-position: inside;
+    color: #b6b6b6;
+    line-height: 1.5;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.card > div{
+    background: white;
+    padding: 1rem;
+    max-width: 25rem;
+    border-radius: 10px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+.test-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.test-box button:disabled{
+    cursor: not-allowed;
+    background: #959595;
+}
+.test-box .light{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    display: inline-block;
+    background: #bbbbbb;
+    margin-bottom: 1.5rem;
+}
+.test-box .light.red{
+    background: #f44336;
+}
+.test-box .light.green{
+    background: #8bc34a;
+}
+.test-box p.time{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #7e7e7e;
+    font-weight: 600;
+    visibility: hidden;
+}
+.result-div{
+    text-align: center;
+    display: none;
+}
+.result-div ul{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+.result-div p.final-score{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.result-div button{
+    margin-bottom: 0;
+    background: #e53935;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
